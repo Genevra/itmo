@@ -31,23 +31,3 @@
 - По полному соответствию слова.
 '''
 
-import pickle
-data = {
-    'Auto': {
-        'opel': 95,
-        'mazda': 110,
-        'mersedes': 120
-    }
-}
-
-f = open('Auto.pickle', 'wb')
-pickle.dump(data, f)
-f.close()
-
-answer = str(input('input / output: '))
-if answer == 'input':
-    print('yo')
-elif answer == 'output':
-    print('hoy')
-else:
-    print('no')
